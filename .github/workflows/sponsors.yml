@@ -1,4 +1,4 @@
-            - name: Add GitHub Sponsors to Readme
+  name: Add GitHub Sponsors to Readme
   # You may pin to the exact commit or the version.
   # uses: JamesIves/github-sponsors-readme-action@e02870f32a3a2f2fe57e98a3f75f955c736c32a2
   uses: JamesIves/github-sponsors-readme-action@v1.5.1
