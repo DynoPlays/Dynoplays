@@ -1,0 +1,28 @@
+            - name: Add GitHub Sponsors to Readme
+  # You may pin to the exact commit or the version.
+  # uses: JamesIves/github-sponsors-readme-action@e02870f32a3a2f2fe57e98a3f75f955c736c32a2
+  uses: JamesIves/github-sponsors-readme-action@v1.5.1
+  with:
+    # You must provide the action with a Personal Access Token (PAT) with either the user:read and org:read permission scope and store it in the secrets / with menu as a secret.  This should be generated from the account or organization that receives sponsorship.
+[Learn more about creating and using encrypted secrets here.](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/creating-and-using-encrypted-secrets)
+
+    token: README.md
+    # This should point to the file that you're generating, for example README.md or path/to/CREDITS.md
+    file: false
+    # If you're displaying sponsorship information as an organization you should toggle this option to true. You also need to provide the action with an org:read scoped PAT.
+    organization: # optional
+    # Using this input you can set the minimum sponsorship threshold. For example setting this to 500 will only display sponsors who give of $5 USD and more. By default the action will display all of your sponsors.
+    minimum: # optional
+    # For example setting this to 1000 will only display sponsors who give of $10 USD and less. By default the action will display all of your sponsors.
+    maximum: # optional
+    # This allows you to modify the marker comment that is placed in your file. By default this is set to sponsors - <!-- sponsors --> <!-- sponsors -->, if you set this to gold for example you can place <!-- gold --> <!-- gold --> in your file.
+    marker: # optional
+    # Allows you to modify the default template. Please refer to the `template` section of this README for more information.
+    template: # optional
+    # Allows you to specify a fallback if you have no sponsors. By default nothing is displayed.
+    fallback: # optional
+    # If set to false, inactive sponsors will be displayed. This can be useful if you want to display all sponsors, regardless of their status.
+    active-only: # optional, default is true
+    # If set to true, private sponsors will be displayed in the list, however any identifying information will be redacted. This can be useful if you want to display all sponsors, regardless of their privacy settings.
+    include-private: # optional, default is false
+          
